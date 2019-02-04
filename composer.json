@@ -1,0 +1,22 @@
+{
+    "name": "nixar59/yii2-app-min",
+    "description": "Minimal YII2 application template",
+    "type": "yii2-app",
+    "authors": [
+        {
+            "name": "Nixar",
+            "email": "bushmakin59@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },
+    "extra": {
+        "yii\\composer\\Installer::postInstall": {
+            "generateCookieValidationKey": [
+                "config/web.php"
+            ]
+        }
+    }
+}
